@@ -1,0 +1,58 @@
+# ---- Go 构建文件 ----
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# go build / go install 生成的二进制
+/bin/
+/build/
+/dist/
+/release/
+
+# ---- Go Modules 缓存 ----
+/vendor/
+/Godeps/
+
+# ---- 日志 & 临时文件 ----
+*.log
+*.tmp
+*.swp
+*.swo
+
+# ---- Docker ----
+# Dockerfile 可以提交（一般需要），但构建缓存不要
+.dockerignore
+docker-compose.override.yml
+docker-compose.override.*.yml
+docker-compose.local.yml
+docker-compose.dev.yml
+
+# Docker build 产物目录（你可以根据实际修改）
+/tmp/
+/.cache/
+/data/
+/docker-data/
+/volumes/
+/mnt/
+
+# 如果你用 Docker multi-stage 构建，把输出目录也忽略
+/app/bin/
+/app/tmp/
+
+# ---- IDE & 编辑器 ----
+# GoLand / IntelliJ
+.idea/
+
+# VSCode
+.vscode/
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
