@@ -1,0 +1,8 @@
+Name: demo-api
+Host: 0.0.0.0
+Port: 8888
+
+Database:
+  driver: mysql
+  dsn: "root:123zx,.@tcp(lobanjo.shop:3306)/demo?charset=utf8mb4&parseTime=True&loc=Local"
+  logMode: true
